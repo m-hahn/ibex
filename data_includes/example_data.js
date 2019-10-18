@@ -61,7 +61,10 @@ var items = [
             age: function (s) { if (s.match(/^\d+$/)) return true; else return "Bad value for \u2018age\u2019"; }
         }
     } ],
-
+   ["intro", "Form", {consentRequired: true, html: {include: "intro.html" }} ],
+   ["intro", "Form", {consentRequired: true, html: {include: "intro1.html" }} ],
+   ["intro", "Form", {consentRequired: true, html: {include: "intro2.html" }} ],
+   ["intro", "Form", {consentRequired: true, html: {include: "intro3.html" }} ],
     //
     // Three practice items for self-paced reading (one with a comprehension question).
     //
@@ -69,7 +72,7 @@ var items = [
     ["practice", "DashedSentence", {s: "This is another practice sentence with a practice question following it."},
                  "Question", {hasCorrect: false, randomOrder: false,
                               q: "How would you like to answer this question?",
-                              as: ["Press 1 or click here for this answer.",
+                              as: ["XXX Press 1 or click here for this answer.",
                                    "Press 2 or click here for this answer.",
                                    "Press 3 or click here for this answer."]}],
     ["practice", "DashedSentence", {s: "This is the last practice sentence before the experiment begins."}],
@@ -154,3 +157,4 @@ var items = [
                                   "The patient still has severe pain in his right leg",
                                   "The patient no longer suffers from pain in his left leg"]}]
 ];
+
