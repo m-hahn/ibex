@@ -61,10 +61,10 @@ var items = [
             age: function (s) { if (s.match(/^\d+$/)) return true; else return "Bad value for \u2018age\u2019"; }
         }
     } ],
-   ["intro", "Form", {consentRequired: true, html: {include: "intro.html" }} ],
-   ["intro", "Form", {consentRequired: true, html: {include: "intro1.html" }} ],
-   ["intro", "Form", {consentRequired: true, html: {include: "intro2.html" }} ],
-   ["intro", "Form", {consentRequired: true, html: {include: "intro3.html" }} ],
+//   ["intro", "Form", {consentRequired: true, html: {include: "intro.html" }} ],
+  // ["intro", "Form", {consentRequired: true, html: {include: "intro1.html" }} ],
+//   ["intro", "Form", {consentRequired: true, html: {include: "intro2.html" }} ],
+  // ["intro", "Form", {consentRequired: true, html: {include: "intro3.html" }} ],
     //
     // Three practice items for self-paced reading (one with a comprehension question).
     //
@@ -142,7 +142,7 @@ var items = [
                              as: ["Because the secretary hadn't filed them properly",
                                   "Because a manager at the company had lost them",
                                   "Because they had been stolen."]}],
-
+    // first is "group" -- effectively the item, and exactly one version per group will be selected
     ["f", "DashedSentence", {s: "If the homemade beer had been left to ferment more, it would have been drinkable."},
           "Question",       {q: "Why wasn't the homemade beer drinkable?",
                              as: ["It hadn't been left to ferment long enough",
