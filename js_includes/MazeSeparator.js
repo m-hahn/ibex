@@ -1,7 +1,7 @@
 /* This software is licensed under a BSD license; see the LICENSE file for details. */
 
 define_ibex_controller({
-name: "Separator",
+name: "MazeSeparator",
 
 jqueryWidget: {
     _init: function () {
@@ -27,6 +27,9 @@ jqueryWidget: {
         var x = this.utils.getValueFromPreviousElement("errorMessage");
         if (x) error_message = x;
 
+        var x = this.utils.getValueFromPreviousElement("counter");
+        if (x) this.utils.setValueForNextElement("counter",x);
+        
         var p = $(document.createElement("p"));
         this.element.append(p);
         if (this.style == "error") {

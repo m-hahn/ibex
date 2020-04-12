@@ -78,7 +78,6 @@ function latinSquare(arrayOfArrays, counter) {
     var record = { };
     var idx = counter;
     var a = new Array(arrayOfArrays.length);
-    console.log(arrayOfArrays)
     for (var i = 0; i < arrayOfArrays.length; ++i) {
         // Are we using the bare idx or a chain thingy?
         if (arrayOfArrays[i][0].group[1] == null) { // Get group of first element of subarray (will be same for
@@ -104,11 +103,6 @@ function latinSquare(arrayOfArrays, counter) {
                 assert(false, "Oh deary me");
             }
             else {
-		console.log("doing latin square")
-		console.log(record)
-		console.log(groupchain)
-//		console.log(record[gropchain])
-		console.log(arrayOfArrays[i])
                 assert(record[groupchain] <= arrayOfArrays[i].length,
                        "Bad dependent group selection index.");
                 a[i] = arrayOfArrays[i][record[groupchain]];
