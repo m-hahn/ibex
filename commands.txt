@@ -1,0 +1,1 @@
+scp mhahn@jamie.stanford.edu:~/scr/CODE/Maze/maze_automate/output_location.txt .
