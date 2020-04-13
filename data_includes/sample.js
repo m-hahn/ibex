@@ -1,7 +1,7 @@
 //for G-maze
 var shuffleSequence = seq("intro", "intro-gram", "intro-practice", followEachWith("sep", "practice"), "end-practice", followEachWith("sep",randomize(anyOf(startsWith("critical"),startsWith("and"), startsWith("adverb"), startsWith("filler")))),  "exit");
 
-var showProgressBar =false;
+var showProgressBar =true;
 
 var defaults = [
    // "Maze", {redo: true}, //uncomment to try "redo" mode
@@ -28,6 +28,7 @@ var items = [
 //	["intro-practice", "Message", {html: "The following items are for practice." }],
 //	["end-practice", "Message", {html: "End of practice. The experiment will begin next."}],
 	["sep", "MazeSeparator", {normalMessage: "Correct! Press any key to continue", errorMessage: "Incorrect! Press any key to continue."}],
+   ["exit", "Form", {consentRequired: true, html: {include: "post.html" }} ],
    ["exit", "Form", {consentRequired: false, html: {include: "exit.html" }} ],
 	["done", "Message", {html: "All done!"}],
 	[["adverb_high", 72], "Maze", {s:"Kim will display the photos she took next month, but she won't show all of them.", a:"x-x-x milk dealing sit compel eat thin poem older, us thy scale soft ran eat soon."}],
