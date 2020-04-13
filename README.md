@@ -2,6 +2,11 @@ This is a branch of Ibex with the Maze task implementation added.
 
 Forked from https://github.com/vboyce/Ibex-with-Maze
 
+Incorporates code from https://github.com/linguistsherry/SPR
+
+Experiment is set up for structural forgetting data.
+
+
 For general information on using Ibex, please see user documentation at <https://github.com/addrummond/ibex/blob/master/docs/manual.md>.
 
 # Implementation of Maze for Ibex
