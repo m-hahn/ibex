@@ -68,7 +68,7 @@ def printPart(item, x, j0, condition, region, outFile):
     return j+j0+1
 
 with open("regions.tsv", "w") as outFile:
-  print("\t".join(["ItemNumber", "WordNumber", "Word", "Type", "Region", "NumberInRegion"]), file=outFile)
+  print("\t".join(["ItemNumber", "WordNumber", "WordFromItem", "Type", "Region", "NumberInRegion"]), file=outFile)
   for i, x, y in zip(range(len(nounsAndVerbs)), topNouns, nounsAndVerbs):
     print(y)
     j0=0
