@@ -1,5 +1,4 @@
-# You may need to add a #! line at the beginning of this file, eg.:
-#     #!/usr/bin/python
+#!/usr/bin/python
 
 #
 # You may need to edit this.
@@ -1562,8 +1561,8 @@ def control(env, start_response):
                 try:
                     counter_value = (qs_hash.has_key('withsquare') and (int(qs_hash['withsquare'][0]),) or (get_counter(),))[0]
                 except ValueError:
-                    start_response('400 Bad Request', [('Content-Type', 'text/html; charset=UTF-8')])
-                    return ["<html><body><h1>400 Bad Request</h1></body></html>"]
+                    start_response('(line 1564) 400 Bad Request', [('Content-Type', 'text/html; charset=UTF-8')])
+                    return ["<html><body><h1>(line 1564) 400 Bad Request</h1></body></html>"]
                 defs.append("var __counter_value_from_server__ = %i;\n" % counter_value)
 
                 retlist = defs + retlist
@@ -1630,7 +1629,7 @@ def control(env, start_response):
                 ivalue = int(qs_hash['withsquare'][0])
             except ValueError:
                 start_response('400 Bad Request', [('Content-Type', 'text/html; charset=UTF-8')])
-                return ["<html><body><h1>400 Bad Request</h1></body></html>"]
+                return ["<html><body><h1>(line 1632) 400 Bad Request</h1></body></html>"]
 
             start_response('200 OK', [('Content-Type', 'text/html; charset=UTF-8')])
             return [generate_html(setcounter=ivalue, overview=False)]
@@ -1647,7 +1646,7 @@ def control(env, start_response):
                     updatef = lambda x: ivalue
             except ValueError, e:
                 start_response('400 Bad Request', [('Content-Type', 'text/html; charset=UTF-8')])
-                return ["<html><body><h1>400 Bad Request</h1></body></html>"]
+                return ["<html><body><h1>(line 1649) 400 Bad Request</h1></body></html>"]
             update_counter(updatef)
             start_response('200 OK', [('Content-Type', 'text/html; charset=UTF-8')])
             return []
@@ -1657,7 +1656,7 @@ def control(env, start_response):
         # ...if none of the above, it's some results.
         if not (env['REQUEST_METHOD'] == 'POST' and env.has_key('CONTENT_LENGTH')):
             start_response('400 Bad Request', [('Content-Type', 'text/html; charset=UTF-8')])
-            return ["<html><body><h1>400 Bad Request</h1></body></html>"]
+            return ["<html><body><h1>(line 1659) 400 Bad Request "+env['REQUEST_METHOD']+"  </h1></body></html>"]
 
         content_length = None
         content_encoding = None
@@ -1723,11 +1722,11 @@ def control(env, start_response):
             except ValueError: # JSON parse failed.
                 backup_raw_post_data(header="# BAD REQUEST FROM %s\n" % user_agent)
                 start_response('400 Bad Request', [('Content-Type', 'text/html; charset=UTF-8')])
-                return ["<html><body><1>400 Bad Request</h1></body></html>"]
+                return ["<html><body><1>(line 1725) 400 Bad Request</h1></body></html>"]
             except HighLevelParseError:
                 backup_raw_post_data(header="# BAD REQUEST FROM %s\n" % user_agent)
                 start_response('400 Bad Request', [('Content-Type', 'text/html; charset=UTF-8')])
-                return ["<html><body><1>400 Bad Request</h1></body></html>"]
+                return ["<html><body><1>(line 1729) 400 Bad Request</h1></body></html>"]
             except IOError:
                 start_response('500 Internal Server Error', [('Content-Type', 'text/html; charset=UTF-8')])
                 return ["<html><body><h1>500 Internal Server Error</h1></body></html>"]
