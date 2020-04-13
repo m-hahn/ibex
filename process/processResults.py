@@ -1,3 +1,4 @@
+
 def camel(x):
     x = x.split(" ")
     for i in range(len(x)):
@@ -62,4 +63,5 @@ with open("trials.tsv", "w") as outFile_trials:
                   else:
                       assert False, line[stoi_coordinates["Controller name"]]
 
-        
+print("TODO shouldn't really just go by IP address")
+
