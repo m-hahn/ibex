@@ -128,9 +128,8 @@ var items = [
 [["filler",  73], "Maze", {s:"The manager who the baker loathed spoke to the new pastry chef because he had instituted a new dress code for all employees.", a:"x-x-x contemplates anti map walks tenuous voted ass goal anti devoid skip weekend star mind veterinary lose dad sides want rose knew indicates."}], 
 [["filler",  74], "Maze", {s:"The teacher doubted that the test that had taken him a long time to design would be easy to answer.", a:"x-x-x totalling grinder star feet them your miss miles song anti oh her ha posted enjoy door fund foot county."}], 
 [["filler",  75], "Maze", {s:"The cook who the servant in the kitchen hired offended the butler and then left the mansion early to see a movie at the local theater.", a:"x-x-x admirably trip cell justify cool lose wanting rough collapse runs thirds gold term miss rate evolved ideas bill code mean miles yeah hear their acquire."}], 
-//[["adverb_low", 72], "Maze", {s:"Kim will display the photos she took last month, but she won't show all of them.", a:"x-x-x- x-x-x- dealing sit compel eat thin poem older, us thy scale soft ran eat soon."}],
-[["practice", 108], "Maze", {s:"The semester will start next week, but the students and teachers are not ready.", a:"x-x-x- x-x-x- anti wages body sold, sin sky entitled sky concrete oil him goods."}],
-[["practice", 107], "Maze", {s:"The mother of the prisoner sent him packages that contained cookies and novels.", a:"x-x-x- x-x-x- dry arm amounted rare nor rhythmic fund authority blossom me defect."}],
-[["practice", 105], "Maze", {s:"The reporter had dinner yesterday with the baseball player who Kevin admired.", a:"x-x-x- x-x-x- joy reduce organisms rise sum attained tended sin Troop flowing."}],
-[["practice", 104], "Maze", {s:"The therapist set up a meeting with the upset woman and her husband yesterday.", a:"x-x-x- x-x-x- ten sit sum absence wave ran keeps exist dry sum settled remainder."}],
+[["practice", 108], "Maze", {s:"The semester will start next week, but the students and teachers are not ready.", a:"x-x-x thrives anti wages body sold, sin sky entitled sky concrete oil him goods."}],
+[["practice", 107], "Maze", {s:"The mother of the prisoner sent him packages that contained cookies and novels.", a:"x-x-x defraud dry arm amounted rare nor rhythmic fund authority blossom me defect."}],
+[["practice", 105], "Maze", {s:"The reporter had dinner yesterday with the baseball player who Kevin admired.", a:"x-x-x quantify joy reduce organisms rise sum attained tended sin Troop flowing."}],
+[["practice", 104], "Maze", {s:"The therapist set up a meeting with the upset woman and her husband yesterday.", a:"x-x-x forestall ten sit sum absence wave ran keeps exist dry sum settled remainder."}],
 ];
