@@ -18,7 +18,7 @@ itos_coordinates_subjects = None
 itos_coordinates_trials = None
 with open("trials.tsv", "w") as outFile_trials:
     with open("subjects.tsv", "w") as outFile_subjects:
-        with open("../results/results", "r") as inFile:
+        with open("../../results/results", "r") as inFile:
             for line in inFile:
                 line = line.strip()
                 if line.startswith("#"):
