@@ -1,4 +1,4 @@
-ItemNumber	WordNumber	Word	Type	Region	NumberInRegion
+ItemNumber	WordNumber	WordFromItem	Type	Region	NumberInRegion
 0	0	The	critical_g	d1	1
 0	1	NOUN	critical_g	n1	1
 0	2	that	critical_g	that	1
