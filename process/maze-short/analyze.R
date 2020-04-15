@@ -3,7 +3,7 @@
 library(tidyr)
 library(dplyr)
 
-trials = read.csv("trials.tsv", sep="\t") %>% filter(Type %in% c("critical_g", "critical_u")) %>% mutate(Word = as.character(Word)) %>% mutate(ReadingTimeToFirstAnswer = as.numeric(as.character(ReadingTimeToFirstAnswer))) %>% rename(Participant=MD5HashOfParticipantsIPAddress) %>% filter(Participant > 0)
+trials = read.csv("trials.tsv", sep="\t") %>% filter(Type %in% c("critical_g", "critical_u")) %>% mutate(Word = as.character(Word)) %>% mutate(ReadingTimeToFirstAnswer = as.numeric(as.character(ReadingTimeToFirstAnswer))) %>% rename(Participant=MD5HashOfParticipantsIPAddress)
 regions = read.csv("regions.tsv", sep="\t") %>% rename(Group=ItemNumber) %>% mutate(WordFromItem = as.character(WordFromItem))
 
 
@@ -35,16 +35,16 @@ summary(lmer(LogTime ~ Type + (1+Type|Group) + (1+Type|Participant), data=critic
 
 critical = trials %>% filter(Region == "v1") %>% group_by(Group, Type, Participant, Noun) %>% filter(NumberInRegion == 1) %>% mutate(LogTime = log(ReadingTimeToFirstAnswer))
 summary(lmer(LogTime ~ Type + (1|Noun) + (1+Type|Group) + (1+Type|Participant), data=critical))
-
-
-
-
-errors = trials %>% filter(ErrorHere) %>% select(Group, Type, Participant, WordNumber, Word)
-
-errors[order(errors$Word),] %>% filter(Participant > 1, WordNumber > 1)
-
-
 summary(lmer(LogTime ~ Grammatical*Ratio.C + (1|Noun) + (1+Type|Group) + (1+Type|Participant), data=critical))
+
+
+
+
+errors = trials %>% filter(ErrorHere) %>% select(Group, Type, Participant, WordNumber, Word, Alternative)
+
+errors[order(errors$Word),] %>% filter(WordNumber > 1)
+
+
 
 critical = trials %>% filter(Region %in% c("v1", "v2")) %>% group_by(Group, Type, Participant, Noun, Grammatical, Ratio.C) %>% summarise(ReadingTimeToFirstAnswer = sum(ReadingTimeToFirstAnswer)) %>% mutate(LogTime = log(ReadingTimeToFirstAnswer))
 summary(lmer(LogTime ~ Grammatical*Ratio.C + (1|Noun) + (1+Type|Group) + (1+Type|Participant), data=critical))

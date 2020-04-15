@@ -21,6 +21,7 @@ with open("trials.tsv", "w") as outFile_trials:
         with open("../../results/results", "r") as inFile:
             for line in inFile:
                 line = line.strip()
+                print(line)
                 if line.startswith("#"):
                     if len(line) < 5:
                         continue
@@ -35,7 +36,7 @@ with open("trials.tsv", "w") as outFile_trials:
                         print(position, value)
                         stoi_coordinates[value] = int(position)-1
                         itos_coordinates[int(position)-1] = value
-                else:
+                elif len(line) > 3:
                   line = line.split(",")
                   print(line)
                   print("STOI COORDINATES", stoi_coordinates)

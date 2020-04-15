@@ -1,0 +1,91 @@
+TimeResultsWereReceived	MD5HashOfParticipantsIPAddress	ControllerName	ItemNumber	ElementNumber	Type	Group	FieldName	FieldValue
+1586864104	0	Form	1	0	intro	NULL	natlang	English
+1586864104	0	Form	1	0	intro	NULL	parentlang	English
+1586864104	0	Form	1	0	intro	NULL	domlang	English
+1586864104	0	Form	1	0	intro	NULL	growup	us
+1586864104	0	Form	4	0	exit	NULL	suggested_pay	10
+1586864104	0	Form	4	0	exit	NULL	comments	NONE
+1586864104	0	Form	4	0	exit	NULL	enjoy	yes
+1586864104	0	Form	5	0	exit	NULL	randomfield	OhTRn5ea
+1586864104	0	Form	5	0	exit	NULL	identifier	OhTRn5ea
+1586864460	1	Form	1	0	intro	NULL	natlang	English
+1586864460	1	Form	1	0	intro	NULL	parentlang	English
+1586864460	1	Form	1	0	intro	NULL	domlang	English
+1586864460	1	Form	1	0	intro	NULL	growup	us
+1586864460	1	Form	4	0	exit	NULL	suggested_pay	Your amount is good.
+1586864460	1	Form	4	0	exit	NULL	comments	
+1586864460	1	Form	4	0	exit	NULL	enjoy	somewhat
+1586864460	1	Form	5	0	exit	NULL	randomfield	bftkv0DW
+1586864460	1	Form	5	0	exit	NULL	identifier	bftkv0DW
+1586865099	2	Form	1	0	intro	NULL	natlang	ENGLISH
+1586865099	2	Form	1	0	intro	NULL	parentlang	ENGLISH
+1586865099	2	Form	1	0	intro	NULL	domlang	ENGLISH
+1586865099	2	Form	1	0	intro	NULL	growup	us
+1586865099	2	Form	4	0	exit	NULL	suggested_pay	15
+1586865099	2	Form	4	0	exit	NULL	comments	No there is no other comment.
+1586865099	2	Form	4	0	exit	NULL	enjoy	yes
+1586865099	2	Form	5	0	exit	NULL	randomfield	8hiL7m3Q
+1586865099	2	Form	5	0	exit	NULL	identifier	8hiL7m3Q
+1586866014	3	Form	1	0	intro	NULL	natlang	English
+1586866014	3	Form	1	0	intro	NULL	parentlang	English
+1586866014	3	Form	1	0	intro	NULL	domlang	English
+1586866014	3	Form	1	0	intro	NULL	growup	us
+1586866014	3	Form	4	0	exit	NULL	suggested_pay	9
+1586866014	3	Form	4	0	exit	NULL	comments	The pay was fair and this hit was somewhat challenging - yet more interesting than most.
+1586866014	3	Form	4	0	exit	NULL	enjoy	somewhat
+1586866014	3	Form	5	0	exit	NULL	randomfield	GV2UIdmS
+1586866014	3	Form	5	0	exit	NULL	identifier	GV2UIdmS
+1586869754	4	Form	1	0	intro	NULL	natlang	English
+1586869754	4	Form	1	0	intro	NULL	parentlang	English
+1586869754	4	Form	1	0	intro	NULL	domlang	English
+1586869754	4	Form	1	0	intro	NULL	growup	us
+1586869754	4	Form	4	0	exit	NULL	suggested_pay	2
+1586869754	4	Form	4	0	exit	NULL	comments	No comments.
+1586869754	4	Form	4	0	exit	NULL	enjoy	somewhat
+1586869754	4	Form	5	0	exit	NULL	randomfield	q0T5BieB
+1586869754	4	Form	5	0	exit	NULL	identifier	q0T5BieB
+1586871162	5	Form	1	0	intro	NULL	natlang	English
+1586871162	5	Form	1	0	intro	NULL	parentlang	English
+1586871162	5	Form	1	0	intro	NULL	domlang	English
+1586871162	5	Form	1	0	intro	NULL	growup	us
+1586871162	5	Form	4	0	exit	NULL	suggested_pay	10
+1586871162	5	Form	4	0	exit	NULL	comments	I really enjoyed this hit. Thank you
+1586871162	5	Form	4	0	exit	NULL	enjoy	yes
+1586871162	5	Form	5	0	exit	NULL	randomfield	zWPDxFET
+1586871162	5	Form	5	0	exit	NULL	identifier	zWPDxFET
+1586872858	6	Form	1	0	intro	NULL	natlang	English
+1586872858	6	Form	1	0	intro	NULL	parentlang	English
+1586872858	6	Form	1	0	intro	NULL	domlang	English
+1586872858	6	Form	1	0	intro	NULL	growup	us
+1586872858	6	Form	4	0	exit	NULL	suggested_pay	10
+1586872858	6	Form	4	0	exit	NULL	comments	The study went well.
+1586872858	6	Form	4	0	exit	NULL	enjoy	yes
+1586872858	6	Form	5	0	exit	NULL	randomfield	qwerty12
+1586872858	6	Form	5	0	exit	NULL	identifier	qwerty12
+1586873204	7	Form	1	0	intro	NULL	natlang	English
+1586873204	7	Form	1	0	intro	NULL	parentlang	English
+1586873204	7	Form	1	0	intro	NULL	domlang	English
+1586873204	7	Form	1	0	intro	NULL	growup	us
+1586873204	7	Form	4	0	exit	NULL	suggested_pay	9
+1586873204	7	Form	4	0	exit	NULL	comments	
+1586873204	7	Form	4	0	exit	NULL	enjoy	yes
+1586873204	7	Form	5	0	exit	NULL	randomfield	6F1TysQr
+1586873204	7	Form	5	0	exit	NULL	identifier	6F1TysQr
+1586874815	8	Form	1	0	intro	NULL	natlang	English
+1586874815	8	Form	1	0	intro	NULL	parentlang	English
+1586874815	8	Form	1	0	intro	NULL	domlang	English
+1586874815	8	Form	1	0	intro	NULL	growup	us
+1586874815	8	Form	4	0	exit	NULL	suggested_pay	9
+1586874815	8	Form	4	0	exit	NULL	comments	Thank you! Sorry for mistakes%2C I had a bit of a struggle with this one
+1586874815	8	Form	4	0	exit	NULL	enjoy	yes
+1586874815	8	Form	5	0	exit	NULL	randomfield	iy1o8ADd
+1586874815	8	Form	5	0	exit	NULL	identifier	iy1o8ADd
+1586874905	9	Form	1	0	intro	NULL	natlang	english
+1586874905	9	Form	1	0	intro	NULL	parentlang	english
+1586874905	9	Form	1	0	intro	NULL	domlang	english
+1586874905	9	Form	1	0	intro	NULL	growup	us
+1586874905	9	Form	4	0	exit	NULL	suggested_pay	10
+1586874905	9	Form	4	0	exit	NULL	comments	
+1586874905	9	Form	4	0	exit	NULL	enjoy	somewhat
+1586874905	9	Form	5	0	exit	NULL	randomfield	9SO7ulJZ
+1586874905	9	Form	5	0	exit	NULL	identifier	9SO7ulJZ
