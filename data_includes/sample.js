@@ -7,7 +7,24 @@ var defaults = [
    // "Maze", {redo: true}, //uncomment to try "redo" mode
 ];
 
+// https://javascript.info/task/shuffle
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1)); // random index from 0 to i
+
+    // swap elements array[i] and array[j]
+    // we use "destructuring assignment" syntax to achieve that
+    // you'll find more details about that syntax in later chapters
+    // same can be written as:
+    // let t = array[i]; array[i] = array[j]; array[j] = t
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+
+
 var nouns = ['announcement', 'suspicion', 'allegation', 'realization', 'indication', 'remark', 'speculation', 'assurance', 'presumption', 'finding', 'assertion', 'statement', 'assumption', 'conclusion', 'report', 'story', 'disclosure', 'confirmation', 'information', 'evidence', 'reminder', 'rumor', 'thought', 'suggestion', 'revelation', 'belief', 'inkling', 'suspicion', 'idea', 'claim', 'news', 'proof', 'admission', 'declaration', 'fact'];
+console.log(nouns);
+//console.log(nouns.sort( () => Math.random() - 0.5) );
 shuffle(nouns);
 console.log(nouns);
 
@@ -42,22 +59,22 @@ var items = [
 [["critical_u", 3], "Maze", {s:"The "+nouns[3]+" that the runner who the psychiatrist treated was ridiculous.", a:"x-x-x narrates pro buy detect holy lord enthusiastic ongoing cent exhibition."}],
 [["critical_g", 4], "Maze", {s:"The "+nouns[4]+" that the child who the medic rescued was unharmed relieved everyone.", a:"x-x-x symbolizes wish what there trip hot vases fascist link tortoise tracking involved."}],
 [["critical_u", 4], "Maze", {s:"The "+nouns[4]+" that the child who the medic rescued relieved everyone.", a:"x-x-x symbolizes wish what there trip hot vases fascist tracking involved."}],
-[["critical_g", 5], "Maze", {s:"The "+nouns[5]+" that the criminal who the officer arrested was guilty was entirely bogus.", a:"x-x-x violates ice dad together foot map however identity data vision mean universe maids."}],
-[["critical_u", 5], "Maze", {s:"The "+nouns[5]+" that the criminal who the officer arrested was entirely bogus.", a:"x-x-x violates ice dad together foot map however identity mean universe maids."}],
+[["critical_g", 5], "Maze", {s:"The "+nouns[5]+" that the criminal who the officer arrested was guilty was entirely bogus.", a:"x-x-x violates ice him together foot map however identity data vision mean universe maids."}],
+[["critical_u", 5], "Maze", {s:"The "+nouns[5]+" that the criminal who the officer arrested was entirely bogus.", a:"x-x-x violates ice him together foot map however identity mean universe maids."}],
 [["critical_g", 6], "Maze", {s:"The "+nouns[6]+" that the student who the professor hated dropped out made the professor happy.", a:"x-x-x protects sea mom towards me true including brush license ass pick ass everybody gonna."}],
 [["critical_u", 6], "Maze", {s:"The "+nouns[6]+" that the student who the professor hated made the professor happy.", a:"x-x-x protects sea mom towards me true including brush pick ass everybody gonna."}],
 [["critical_g", 7], "Maze", {s:"The "+nouns[7]+" that the mobster who the media portrayed had disappeared turned out to be true.", a:"x-x-x realizes slow hear agrees oh cent which footsteps trip importantly summer week cup sick rate."}],
 [["critical_u", 7], "Maze", {s:"The "+nouns[7]+" that the mobster who the media portrayed turned out to be true.", a:"x-x-x realizes slow hear agrees oh cent which footsteps summer week cup sick rate."}],
-[["critical_g", 8], "Maze", {s:"The "+nouns[8]+" that the actor who the starlet loved was missing made her cry.", a:"x-x-x commemorates wild ass forth holy wide densest miles note comment walk mid gear."}],
-[["critical_u", 8], "Maze", {s:"The "+nouns[8]+" that the actor who the starlet loved made her cry.", a:"x-x-x commemorates wild ass forth holy wide densest miles walk mid gear."}],
+[["critical_g", 8], "Maze", {s:"The "+nouns[8]+" that the actor who the starlet loved was missing made her cry.", a:"x-x-x commemorates wild ass forth holy wide retains miles note comment walk mid gear."}],
+[["critical_u", 8], "Maze", {s:"The "+nouns[8]+" that the actor who the starlet loved made her cry.", a:"x-x-x commemorates wild ass forth holy wide retains miles walk mid gear."}],
 [["critical_g", 9], "Maze", {s:"The "+nouns[9]+" that the preacher who the parishioners fired stole money proved to be true.", a:"x-x-x assumes vote hear donating yeah jobs mysteriously medal float click desert wall wife am."}],
 [["critical_u", 9], "Maze", {s:"The "+nouns[9]+" that the preacher who the parishioners fired proved to be true.", a:"x-x-x assumes vote hear donating yeah jobs mysteriously medal desert wall wife am."}],
 [["critical_g", 10], "Maze", {s:"The "+nouns[10]+" that the violinist who the sponsors backed abused drugs is likely true.", a:"x-x-x reappears slow hear isolating dad port hurries victor phases brain sir finish year."}],
 [["critical_u", 10], "Maze", {s:"The "+nouns[10]+" that the violinist who the sponsors backed is likely true.", a:"x-x-x reappears slow hear isolating dad port hurries victor sir finish year."}],
-[["critical_g", 11], "Maze", {s:"The "+nouns[11]+" that the senator who the diplomat opposed was winning really made him angry.", a:"x-x-x endorses air guys confirm ass ways rewarded masters bus century happen web wall drama."}],
-[["critical_u", 11], "Maze", {s:"The "+nouns[11]+" that the senator who the diplomat opposed really made him angry.", a:"x-x-x endorses air guys confirm ass ways rewarded masters happen web wall drama."}],
-[["critical_g", 12], "Maze", {s:"The "+nouns[12]+" that the commander who the president appointed was corrupt troubled people.", a:"x-x-x stimulates tax apt wondering hall tree therefore emergency idea tourism organize listen."}],
-[["critical_u", 12], "Maze", {s:"The "+nouns[12]+" that the commander who the president appointed troubled people.", a:"x-x-x stimulates tax apt wondering hall tree therefore emergency organize listen."}],
+[["critical_g", 11], "Maze", {s:"The "+nouns[11]+" that the senator who the diplomat opposed was winning really made him angry.", a:"x-x-x endorses air me confirm ass ways rewarded masters bus century happen web wall drama."}],
+[["critical_u", 11], "Maze", {s:"The "+nouns[11]+" that the senator who the diplomat opposed really made him angry.", a:"x-x-x endorses air me confirm ass ways rewarded masters happen web wall drama."}],
+[["critical_g", 12], "Maze", {s:"The "+nouns[12]+" that the commander who the president appointed was corrupt troubled people.", a:"x-x-x stimulates tax apt wondering hall tree therefore emergency idea tourism organic listen."}],
+[["critical_u", 12], "Maze", {s:"The "+nouns[12]+" that the commander who the president appointed troubled people.", a:"x-x-x stimulates tax apt wondering hall tree therefore emergency organic listen."}],
 [["critical_g", 13], "Maze", {s:"The "+nouns[13]+" that the victims who the criminal assaulted were surviving calmed everyone down.", a:"x-x-x derives yeah wow connect lake mid continue accessing sort animation duplex standing ha."}],
 [["critical_u", 13], "Maze", {s:"The "+nouns[13]+" that the victims who the criminal assaulted calmed everyone down.", a:"x-x-x derives yeah wow connect lake mid continue accessing duplex standing ha."}],
 [["critical_g", 14], "Maze", {s:"The "+nouns[14]+" that the politician who the banker bribed laundered money came as a shock to his supporters.", a:"x-x-x avoids ice eyes emphasized fine but bamboo nieces catalysis stuff yeah camp eat meets eyes born vegetables."}],
